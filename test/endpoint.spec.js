@@ -17,6 +17,7 @@ describe("Valida el archivo JSON del flow", () => {
     ).toBe(true);
   });
 
+  
   test("Debe contener al menos 1 Prompt Template", async () => {
     expect(flow.nodes.some((node) => node.data.type === "PromptTemplate")).toBe(
       true
