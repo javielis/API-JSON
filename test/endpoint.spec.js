@@ -9,8 +9,6 @@ describe("Valida el archivo JSON del flow", () => {
       )
     ).toBeGreaterThan(1);
   });
-
-  
   test("Debe utilizar únicamente el modelo de chat gpt-3.5-turbo", () => {
     expect(
       flow.nodes
